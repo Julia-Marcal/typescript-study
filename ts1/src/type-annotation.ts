@@ -16,7 +16,7 @@ const player: { Nickname: string; Age: number; isOnline?: boolean } = {
   isOnline: false,
 };
 
-//Using these informations in a function
+//Using these information in a function
 
 function PlayerCanPlay(player: any): string {
   if (player.Age < 18) {
