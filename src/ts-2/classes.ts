@@ -20,10 +20,7 @@ export class Company {
 }
 
 export class Collaborator {
-  constructor(
-    public readonly name: string,
-    public readonly lastname: string,
-  ) {}
+  constructor(public readonly name: string, public readonly lastname: string) {}
 }
 
 const Coopivara = new Company('Coopivara', '11.111.111/0001-11');
@@ -36,4 +33,4 @@ Coopivara.addColaborator(collaborator1);
 Coopivara.addColaborator(collaborator2);
 Coopivara.addColaborator(collaborator3);
 
-Coopivara.showCurrentColaborator()
+Coopivara.showCurrentColaborator();
