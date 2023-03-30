@@ -8,7 +8,7 @@ export abstract class Character {
   ) {}
 
   atacar(Character: Character): void {
-    this.lne();
+    this.line();
     Character.loselife(this.attack);
   }
 
@@ -19,20 +19,20 @@ export abstract class Character {
     );
   }
 
-  abstract lne(): void;
+  abstract line(): void;
 }
 
 export class Warrior extends Character {
   protected emoji = '\u{1F9DD}';
 
-  lne(): void {
+  line(): void {
     console.log(this.emoji + ' Warrior Attack!!');
   }
 }
 export class Monster extends Character {
   protected emoji = '\u{1F9DF}';
 
-  lne(): void {
+  line(): void {
     console.log(this.emoji + ' MONNNNNNNNNNNSSSTERRRRRRRRRRRRRR!!!!');
   }
 }
