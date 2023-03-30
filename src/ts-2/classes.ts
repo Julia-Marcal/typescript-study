@@ -21,8 +21,8 @@ export class Company {
 
 export class Collaborator {
   constructor(
-    public readonly nome: string,
-    public readonly sobrenome: string,
+    public readonly name: string,
+    public readonly lastname: string,
   ) {}
 }
 
